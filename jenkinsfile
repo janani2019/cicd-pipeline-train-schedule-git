@@ -1,0 +1,10 @@
+
+node{
+    stage('SCM checkout'){
+     git 'https://github.com/janani2019/cicd-pipeline-train-schedule-git'
+     }
+    stage('Compile package'){
+     sh 'mvn package'
+     }
+
+     }
