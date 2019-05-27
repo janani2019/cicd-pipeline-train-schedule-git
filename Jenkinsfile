@@ -1,10 +1,10 @@
 
 node{
    stage('SCM checkout'){
-     git 'git@github.com:linuxacademy/cicd-pipeline-train-schedule-git.git'
+     git 'git@github.com:janani2019/cicd-pipeline-train-schedule-git.git'
    }
    stage('Compile Package){
      sh 'mvn package'
    }
 
-}
+   }
